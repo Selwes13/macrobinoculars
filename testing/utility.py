@@ -3,7 +3,7 @@ import cv2
 import numpy as np
 #%% loads shape cutout and scales it to the input image
 
-def prep_map (w,h, im_path='data\\Images\\\cutout_map.png'):
+def prep_map (w,h, im_path='images\\\cutout_map.png'):
     im_map = cv2.imread(im_path, cv2.IMREAD_GRAYSCALE)
 
     # scale to size of input image
@@ -43,7 +43,7 @@ def scan_lines (frame, size=10, saturation=0.8):
 
 
 if __name__ == "__main__":
-    img = cv2.imread('data\\Images\\\mando_test_image.png')
+    img = cv2.imread('images\\\mando_test_image.png')
     h,w = img.shape[:2]
 
     ratio = 800 / w  
