@@ -14,7 +14,7 @@ cap = cv2.VideoCapture(0)
 ret, frame = cap.read()
 
 if (reshape):
-    h,w = (240,320)
+    w,h = (480, 320)
     #h,w = frame.shape[:2]
 
 
@@ -24,7 +24,7 @@ shifts = (1.4, 1.4, 0.9) # scale up of B,G,R values to give the blue tint
 shifts = [s*desat for s in shifts]
 print(shifts)
 
-im_map = prep_map(w=w,h=h, im_path='data\\Images\\\cutout_map_320x240.png')
+im_map = prep_map(w=w,h=h, im_path='images\\\cutout_map_320x240.png')
 
 for i in range(24*20):
     #read frame
@@ -59,6 +59,6 @@ for i in range(24*20):
 # When everything done, release the capture
 cap.release()
 cv2.destroyAllWindows()
-q# %%
+# %%
 
 # %%

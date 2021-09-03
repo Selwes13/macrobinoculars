@@ -19,7 +19,7 @@ disp_screen = True
 if (len(sys.argv) > 1):
     disp_screen = 'true' == sys.argv[1].lower()
 
-resolution=(320, 240)
+resolution=(480, 320)
 w,h=resolution
 print("Display on Screen", disp_screen)
 
