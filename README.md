@@ -11,4 +11,9 @@ A raspberry pi project to feed the PiCamera input through image processing and o
 | --- | --- |
 | All Python | 14fps |
 | Write frame to file | 8fps |
-| C Write to screen only | -fps |
+| New Screen (HDMI) | -fps |
+
+
+## Options to test
+- update only centre of image (not frame around)
+- C-Python API
