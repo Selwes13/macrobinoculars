@@ -130,3 +130,7 @@ dmypy.json
 
 # screen C library
 /testing/speedTests/lib/*
+
+# Images
+*.png
+*.jpg
